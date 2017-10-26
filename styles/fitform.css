@@ -559,10 +559,7 @@ body>header {
 
 /*iPhone 6 Plus*/
 @media (max-width: 414px){
-  html {
-    position: relative;
-    top: 200px;
-  }
+
   #center_everything {
     position: relative;
     width: 414px;
@@ -576,17 +573,26 @@ body>header {
     left: 20px;
   }
   .nav {
-    width: 414px;
-    margin: 0;
-    padding: 0;
-    left: 0;
 
   }
   .background_container {
-    width: 100%;
+    width: 414px;
   }
   .image_background {
+    position: relative;
+    left: -250px;
+    width: 200%;
+  }
+  #features {
 
   }
+  .feature_container {
+    width: 414px;
+  }
+  .shape {
+    width: 414px;
+  }
+  .shape_container {
 
+  }
 }
