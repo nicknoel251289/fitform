@@ -4,79 +4,217 @@
     <meta charset="utf-8">
     <title>Fit Form</title>
     <link rel="stylesheet" href="styles/fitform.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="scripts/fitform.js" type="text/javascript"></script>
   </head>
 
   <body>
-
+    <div id="center_everything">
     <header>
-      <img alt='logo' src="Pictures\FitForm_logo\black_logo.gif" />
-      <nav>
+      <img id="logo" alt='logo' src="Pictures\FitForm_logo\black_logo.gif" />
+      <div class="nav_background"></div>
+      <nav id="header_nav">
         <ul>
-          <li><a></a>
-          </li><li><a>Account</a>
-          </li><li><a>Home</a>
-          </li><li><a>Account</a>
+          <li><a href="#">Account</a>
+          </li><li><a href="#">Home</a>
+          </li><li><a href="#">FAQ</a>
+          </li><li><a href="#">Trial</a>
           </li>
         </ul>
       </nav>
 
-      <div>Better Form - Better Results</div>
+      <div class='background_container'>
+        <img class="image_background" src="Pictures\Site_backgrounds\Dashboard_background.jpg" />
+      </div>
+
+      <div class="slogan_container">
+        <div class="slogan">Better Form - Better Results</div>
+      </div>
 
       <div class='button_wrapper'>
-        <a>7 day free trial!</a>
+        <a href="#">7 day free trial!</a>
       <div>
     </header>
 
     <section id="features">
-      <div>Features</div>
+      <div class="feature_container">
+        <div>Features</div>
+      </div>
+      <!-- <img class="features_background" src="Pictures\Site_backgrounds\background_2.png" /> -->
+      <div class="shape_container">
+        <div class="shape">
 
-      <div>Exercises
-        <div>Choose from over 50 different </br>freeweight exercises</div>
-      </div>
-      <div>Assesment
-        <div>Recieve risk/injury analysis</div>
-      </div>
-      <div>Playback
-        <div>Examine your form with a </br>the replay function</div>
-      </div>
-      <div>Perfect Form
-        <div>Learn the correct posture </br>for all your exercises</div>
-      </div>
-      <div>Accuracy
-        <div>View your accuracy</div>
-      </div>
+          <div class="info_container">
+            <div class="left_features">
+              <div class="left_features_header_text">Exercises</div>
+                <div id="left_features_points_text">Choose from over 50 different </br>freeweight exercises</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="left_features_header_text">Assesment</div>
+                <div id="left_features_points_text">Recieve risk/injury analysis</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="left_features_header_text">Playback</div>
+                <div id="left_features_points_text">Examine your form with a </br>the replay function</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="left_features_header_text">Perfect Form</div>
+                <div id="left_features_points_text">Learn the correct posture </br>for all your exercises</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="left_features_header_text">Tracking</div>
+                <div id="left_features_points_text">Track your progression over </br>weeks, months and years</div>
 
-      <img alt="phone" src="" />
-      <img alt="phone" src="" />
+            </div>
 
-      <div>Compare
-        <div>View your form vs the correct form</div>
-      </div>
-      <div>Recommend
-        <div>Review recommended exercises for </br>corrective action</div>
-      </div>
-      <div>Results
-        <div>See your results and compare them </br>to other users</div>
-      </div>
-      <div>Tracking
-        <div>Track your progression over </br>weeks, months and years</div>
-      </div>
-      <div>Additions
-        <div>Access to all new additional features</div>
-      </div>
+            <div class="phone_container">
+              <img class="phone_vector" alt="phone" src="Pictures\phone_vector_images\iPhone_woman.png" />
+              <br />
+              <br />
+              <br />
+              <br />
+              <img class="phone_vector" alt="phone" src="Pictures\phone_vector_images\iPhone_woman_with_results.png" />
+            </div>
 
+            <div class="right_features">
+              <div class="right_features_header_text">Compare</div>
+                <div id="right_features_points_text">View your form vs the correct form</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="right_features_header_text">Recommend</div>
+                <div id="right_features_points_text">Review recommended exercises </br>for corrective action</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="right_features_header_text">Results</div>
+                <div id="right_features_points_text">See your results and compare </br>them to other users</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="right_features_header_text">Accuracy</div>
+                <div id="right_features_points_text">View your accuracy</div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <div class="right_features_header_text">Additions</div>
+                <div id="right_features_points_text">Access to all new additional </br>features</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </section>
 
-    <section id="price">
+    <section id="costs">
+
+      <img class="pricing_background" src="Pictures\Site_backgrounds\pricing_background.jpg" />
+
+      <div class="costs__header_container">
+        <div class="cost_text">Costs</div>
+      </div>
+
+      <div class="pricing_container">
+        <div class="pricing_free_box">
+          <div class="price_free_heading">Free</div>
+          <div class="free_points">Free - $0</div><br />
+          <div class="free_points">View results and <br /> the accuracy of <br /> your form</div><br />
+          <div class="free_points">Compare with others</div>
+          <div class="free_start_container">
+            <a href="#" class="start_button_free">Start</a>
+          </div>
+        </div>
+
+        <div class="pricing_standard_box">
+          <div class="price_standard_heading">Free</div>
+          <div class="standard_points">Free - $0</div><br />
+          <div class="standard_points">View results and <br /> the accuracy of <br /> your form</div><br />
+          <div class="standard_points">Compare with others</div>
+          <div class="standard_start_container">
+            <a href="#" class="start_button_standard">Start</a>
+          </div>
+        </div>
+
+        <div class="pricing_premium_box">
+          <div class="price_premium_heading">Free</div>
+          <div class="premium_points">Free - $0</div><br />
+          <div class="premium_points">View results and <br /> the accuracy of <br /> your form</div><br />
+          <div class="premium_points">Compare with others</div>
+          <div class="premium_start_container">
+            <a href="#" class="start_button_premium">Start</a>
+          </div>
+        </div>
+      </div>
+
     </section>
 
-    <section id="apple_android_app">
+    <section id="app">
+
+      <div class="app_container">
+        <div class="download">DOWNLOAD THE APP FREE TODAY</div>
+
+        <a href="#"><img class="android_logo" alt="Android_logo" src="Pictures\phone_logos\Android_app_logo_two.png" /></a>
+        <a href="#"><img class="apple_logo" alt="Apple_logo" src="Pictures\phone_logos\Apple_app_logo.png" /></a>
+
+      </div>
+
     </section>
 
-    <footer>
+    <footer id="footer_container">
+
+      <div class="footer_container">
+        <span class="media_wrapper">
+          <a href="#"><img class="fb_media_circle" src="Pictures\social_media_icons\facebook_logo.png" alt="Facebook"></img></a>
+          <a href="#"><img class="ig_media_circle" src="Pictures\social_media_icons\ig-logo.png" alt="Instagram"></img></a>
+          <a href="#"><img class="twitter_media_circle" src="Pictures\social_media_icons\twitter_logo.png" alt="Twitter"></img></a>
+        </span>
+
+        <div class="trial_button">
+          <a href="#">7 DAY FREE TRIAL</a>
+        </div>
+
+        <nav class="footer_nav">
+          <ul>
+            <li><a href="#">Account</a>
+            </li><li><a href="#">FAQ</a>
+            </li><li><a href="#">Career</a>
+            </li><li><a href="#">Support</a>
+          </ul>
+        </nav>
+
+        <div class="all_rights"><img></img>All rights reserved</div>
+      </div>
+
     </footer>
-
+  </div>
   </body>
 
 </html>
