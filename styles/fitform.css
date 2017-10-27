@@ -8,8 +8,10 @@
   position: relative;
   left: 50%;
   margin-left: -952px;
-  height: 4223px;
-  overflow: hidden;
+  height: 4220px;
+  overflow-x: hidden;
+  display: grid;
+  overflow-y: hidden;
 }
 
 html {
@@ -75,6 +77,8 @@ body>header {
   left: 50%;
   margin-left: -952px;*/
   width: 1920px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .image_background {
@@ -83,6 +87,8 @@ body>header {
   top: -100px;
   z-index: -100;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .slogan_container {
@@ -205,26 +211,28 @@ body>header {
   font-size: 16px;
   font-family: 'Audiowide', cursive;
   color: #dadada;
+  padding-bottom: 102px;
 }
 
 .phone_container {
   display: inline-block;
   width: 33%;
   position: relative;
-  top: -130px;
+  top: -110px;
 }
 
 .phone_vector {
   width: 200px;
   position: relative;
   left: 92px;
+  padding-bottom: 20px;
 }
 
 .right_features {
   display: inline-block;
   width: 32.5%;
   position: relative;
-  top: -220px;
+  top: -180px;
   left: 150px;
 }
 
@@ -239,6 +247,7 @@ body>header {
   font-size: 16px;
   font-family: 'Audiowide', cursive;
   color: #dadada;
+  padding-bottom: 102px;
 }
 
 .right_features_text {
@@ -557,7 +566,7 @@ body>header {
   font-family: 'Poiret One', cursive;
 }
 
-/*iPhone 6 Plus*/
+/*iPhone 6 Plus */
 @media (max-width: 414px){
 
   #center_everything {
@@ -566,33 +575,190 @@ body>header {
     margin: 0;
     padding: 0;
     left: 0;
+    height: 5300px;
   }
   #logo {
-    width: 100px;
-    position: relative;
-    left: 20px;
+    display: none;
   }
-  .nav {
-
+  #header_nav ul {
+    left: 0%;
   }
   .background_container {
     width: 414px;
   }
   .image_background {
     position: relative;
-    left: -250px;
-    width: 200%;
+    left: -550px;
+    width: 300%;
   }
-  #features {
-
+  .slogan_container {
+    position: relative;
+    width: 300px;
+    top: -290px;
+    height: 50px;
+    left: 58px;
+  }
+  .slogan {
+    top: 14px;
+  }
+  .button_wrapper {
+    top: -280px;
+    left: 72px;
   }
   .feature_container {
+    margin: 0px
+    padding: 0px;
+    left: 0;
+    top: -250px;
+    z-index: 500;
     width: 414px;
-  }
-  .shape {
-    width: 414px;
+    border-radius: 0;
   }
   .shape_container {
-
+    width: 1920px;
+    height: 2650px;
   }
+  .shape {
+    position: relative;
+    top: 190px;
+    width: 1920px;
+    height: 2650px;
+  }
+  .info_container {
+    margin: 0;
+    width: 414px;
+    text-align: center;
+  }
+  .left_features {
+    width: 100%;
+  }
+  .left_features_header_text {
+    font-size: 26px;
+  }
+  #left_features_points_text {
+    font-size: 14px;
+    padding-bottom: 70px;
+  }
+  .right_features {
+    width: 100%;
+    left: 0;
+    padding-top: 50px;
+  }
+  .right_features_header_text{
+    font-size: 26px;
+  }
+  #right_features_points_text {
+    font-size: 14px;
+    padding-bottom: 70px;
+  }
+  .phone_container {
+    left: 15px;
+    margin: 0;
+    display: grid;
+    width: 414px;
+    top: -200px;
+  }
+  .pricing_background {
+    top: 700px;
+    width: 100%;
+  }
+  .costs__header_container {
+    top: 0;
+    width: 414px;
+  }
+  .pricing_container {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    display: grid;
+    width: 100%;
+  }
+  .pricing_free_box {
+    left: 0;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    width: 414px;
+  }
+  .pricing_standard_box {
+    left: 0;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    width: 414px;
+  }
+  .pricing_premium_box {
+    left: 0;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    width: 414px;
+  }
+  .app_container {
+    top: 0;
+    width: 414px;
+    text-align: center;
+    display: grid;
+  }
+  .download {
+    top: 65px;
+    left: 0;
+    margin: 0;
+    font-size: 24px;
+  }
+  .android_logo {
+    left: 0;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  .apple_logo {
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .media_wrapper {
+    left: 38px;
+    width: 414px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .ig_media_circle {
+    width: 60px;
+    padding: 0;
+    left: 0;
+  }
+  .fb_media_circle {
+    width: 60px;
+    padding: 0;
+    left: 10px;
+  }
+  .twitter_media_circle {
+    width: 60px;
+    padding: 0;
+    left: -10px;
+    top: 7px;
+  }
+  .trial_button {
+    top: 110px;
+    left: 70px;
+  }
+  .footer_nav {
+    left: -6px;
+    top: 230px;
+  }
+  .footer_container {
+    top: 0;
+    left: 0;
+  }
+  .all_rights {
+    left: 150px;
+    top: 250px;
+  }
+}
+
+@media (min-width: 800px){
+
+
 }
