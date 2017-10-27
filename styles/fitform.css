@@ -577,6 +577,7 @@ body>header {
     left: 0;
     height: 5300px;
     overflow-y: hidden;
+    overflow-x: hidden;
   }
   #logo {
     display: none;
@@ -655,9 +656,11 @@ body>header {
   .phone_container {
     left: 15px;
     margin: 0;
-    display: grid;
     width: 414px;
     top: -200px;
+  }
+  .phone_vector {
+    display: block;
   }
   .pricing_background {
     top: 700px;
@@ -671,7 +674,6 @@ body>header {
     margin: 0;
     top: 0;
     padding: 0;
-    display: grid;
     width: 100%;
   }
   .pricing_free_box {
@@ -680,6 +682,7 @@ body>header {
     top: 0;
     padding: 0;
     width: 414px;
+    display: block;
   }
   .pricing_standard_box {
     left: 0;
@@ -687,6 +690,7 @@ body>header {
     top: 0;
     padding: 0;
     width: 414px;
+    display: block;
   }
   .pricing_premium_box {
     left: 0;
@@ -694,52 +698,57 @@ body>header {
     top: 0;
     padding: 0;
     width: 414px;
+    display: block;
   }
   .app_container {
     top: 0;
     width: 414px;
     text-align: center;
-    display: grid;
   }
   .download {
     top: 65px;
     left: 0;
     margin: 0;
     font-size: 24px;
+    display: block;
   }
   .android_logo {
-    left: 0;
-    top: 50px;
+    left: 110px;
+    top: 150px;
     margin: 0;
     padding: 0;
+    display: block;
   }
   .apple_logo {
-    left: 0;
-    top: 0;
+    left: 110px;
+    top: 230px;
     margin: 0;
     padding: 0;
+    display: block;
   }
   .media_wrapper {
-    left: 38px;
+    left: 120px;
     width: 414px;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .ig_media_circle {
     width: 60px;
     padding: 0;
     left: 0;
+    display: inline-block;
   }
   .fb_media_circle {
     width: 60px;
     padding: 0;
-    left: 10px;
+    left: -30px;
+    display: inline-block;
   }
   .twitter_media_circle {
     width: 60px;
     padding: 0;
-    left: -10px;
-    top: 7px;
+    left: 30px;
+    top: -5px;
+    display: inline-block;
   }
   .trial_button {
     top: 110px;
