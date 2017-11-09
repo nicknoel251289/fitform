@@ -5,24 +5,24 @@ and element floated left, if I zoomed out it would stik to the left of the scree
 while everything else shrunk to a smaller size. Now it will stick to the left of the
 container and shrink with everything else*/
 #center_everything {
- position: relative;
- left: 50%;
- margin-left: -952px;
- height: 4220px;
- overflow-x: hidden;
- display: grid;
- overflow-y: hidden;
+ height: 4200px;
+ width: 100%;
+ overflow: hidden;
 }
 
 html {
  overflow-x: hidden;
-}
+ padding: 0;
+ margin: 0;
 
+}
+/*getting rid of the background made everything fit the screen size for devices.
+otherwise there was a 40px+ gap */
 body {
  color: white;
- background-color: gray;
- margin: 0 auto;
- padding: 0px;
+ z-index: -500;
+ padding: 0;
+ margin: 0;
 }
 
 body>header {
@@ -32,7 +32,8 @@ body>header {
 #logo {
  position: relative;
  width: 130px;
- margin-left: 8%;
+ left: 50%;
+ margin-left: -500px;
  z-index: 100;
  top: 25px;
 }
@@ -44,6 +45,8 @@ body>header {
  height: 90px;
  position: fixed;
  top: 0px;
+ left: 50%;
+ margin-left: -954px;
 }
 
 #header_nav {
@@ -51,6 +54,8 @@ body>header {
  width: 1920px;
  z-index: 1000;
  top: 18px;
+ left: 50%;
+ margin-left: -1152px;
 }
 
 #header_nav ul {
@@ -73,9 +78,9 @@ body>header {
 
 .background_container {
  position: relative;
- /* See above why we don't need to do this anymore!!!
+ /* See above why we don't need to do this anymore!!! */
  left: 50%;
- margin-left: -952px;*/
+ margin-left: -960px;
  width: 1920px;
  display: grid;
  grid-template-columns: 1fr;
@@ -84,6 +89,8 @@ body>header {
 .image_background {
  position: relative;
  overflow: hidden;
+ left: 50%;
+ margin-left: -952px;
  top: -100px;
  z-index: -100;
  width: 100%;
@@ -93,24 +100,27 @@ body>header {
 
 .slogan_container {
  position: relative;
- width: 900px;
- height: 120px;
+ width: 1920px;
+ height: 100px;
  background: #1e1e1e;
- text-align: center;
- top: -765px;
+ top: -565px;
  opacity: .75;
+ left: 50%;
+ margin-left: -952px;
 }
 
 .slogan {
  position: relative;
- top: 50px;
+ top: 40px;
+ left: 44%;
  font-family: 'Audiowide', cursive;
 }
 
 .button_wrapper {
  position: relative;
- top: -620px;
- left: 300px;
+ top: -520px;
+ left: 50%;
+ margin-left: -127px;
  text-decoration: none;
  background: #fe3600;
  border-radius: 5px;
@@ -143,6 +153,8 @@ body>header {
   overflow:hidden;
   height: 1600px;
   width: 1920px;
+  left: 50%;
+  margin-left: -952px;
   /* See above why we don't need to do this anymore!!!
   I rpob don't even need THIS container
   left: 50%;
@@ -168,7 +180,8 @@ body>header {
 
 .feature_container {
  position: relative;
- left: 1340px;
+ left: 50%;
+ margin-left: 452px;
  z-index: 50;
  background: #fe3600;
  width: 580px;
@@ -180,7 +193,7 @@ body>header {
 
 .feature_container div {
  position: relative;
- left: 43%;
+ left: 10%;
  top: 17px;
  font-size: 22px;
  font-weight: bold;
@@ -198,6 +211,7 @@ body>header {
  width: 32.5%;
  position: relative;
  top: -200px;
+ left: 75px;
 }
 
 .left_features_header_text {
@@ -233,7 +247,7 @@ body>header {
  width: 32.5%;
  position: relative;
  top: -180px;
- left: 150px;
+ left: 75px;
 }
 
 .right_features_header_text {
@@ -257,14 +271,17 @@ body>header {
 }
 
 #costs {
+ position: relative;
  width: 1920px;
+ left: 50%;
+ margin-left: -960px;
 }
 
 .costs__header_container {
  position: relative;
  z-index: 50;
  background: #fe3600;
- width: 580px;
+ width: 25%;
  height: 60px;
  border-radius: 6px;
  opacity: .75;
@@ -273,7 +290,7 @@ body>header {
 
 .cost_text {
  position: relative;
- left: 43%;
+ left: 370px;
  top: 17px;
  font-size: 22px;
  font-weight: bold;
@@ -438,6 +455,8 @@ body>header {
  position: relative;
  top: -375px;
  z-index: -10;
+ left: 50%;
+ margin-left: -952px;
 }
 
 .download {
@@ -454,6 +473,8 @@ body>header {
  height: 500px;
  background: #fe3600;
  top: -868px;
+ left: 50%;
+ margin-left: -954px;
 }
 
 .android_logo {
@@ -486,7 +507,9 @@ body>header {
  background: #171514;
  width: 1920px;
  height: 450px;
+ left: 50%;
  top: -868px;
+ margin-left: -954px;
 }
 
 .media_wrapper {
@@ -566,15 +589,21 @@ body>header {
  font-family: 'Poiret One', cursive;
 }
 
-/*iPhone 6 Plus */
-@media (max-width: 414px){
-
+/*Make it fit to this size and then add a background and just keep everything centered so you don't have to keep scaling*/
+@media (max-width: 1250px){
+ html {
+   background: black;
+ }
+ body {
+   padding: 0;
+   margin: 0;
+ }
  #center_everything {
    position: relative;
-   width: 414px;
-   margin: 0;
+   width: 100%;
+   left: -100px;
+   margin-left: 100px;
    padding: 0;
-   left: 0;
    height: 5300px;
    overflow-y: hidden;
    overflow-x: hidden;
@@ -583,56 +612,69 @@ body>header {
    display: none;
  }
  #header_nav ul {
-   left: 0%;
+   left: 49%;
  }
  .background_container {
-   width: 414px;
+   left: 50%;
+   margin-left: -952px;
  }
  .image_background {
    position: relative;
-   left: -550px;
-   width: 300%;
+   overflow: hidden;
+   left: 50%;
+   margin-left: -652px;
+   width: 1300px;
  }
  .slogan_container {
    position: relative;
-   width: 300px;
-   top: -290px;
-   height: 50px;
-   left: 58px;
+   width: 1350px;
+   top: -340px;
+   height: 70px;
+   left: 50%;
+   margin-left: -722px;
  }
  .slogan {
-   top: 14px;
+   top: 24px;
  }
  .button_wrapper {
-   top: -280px;
-   left: 72px;
+   top: -320px;
+   left: 50%;
+   margin-left: -130px;
  }
  .feature_container {
-   margin: 0px
+   position: relative;
+   margin-left: -600px;
    padding: 0px;
-   left: 0;
-   top: -250px;
+   left: 50%;
+   top: -270px;
    z-index: 500;
-   width: 414px;
+   width: 1250px;
    border-radius: 0;
+   height: 50px;
+ }
+ .feature_container div {
+   top: 10px;
+   left: 46%;
  }
  .shape_container {
-   width: 1920px;
    height: 2650px;
+   width: 1920px;
  }
  .shape {
    position: relative;
-   top: 190px;
-   width: 1920px;
+   width: 3410px;
    height: 2650px;
+   top: 110px;
  }
  .info_container {
-   margin: 0;
    width: 414px;
    text-align: center;
+   left: 50%;
+   margin-left: -952px;
  }
  .left_features {
    width: 100%;
+   left: 0;
  }
  .left_features_header_text {
    font-size: 26px;
@@ -663,18 +705,27 @@ body>header {
    display: block;
  }
  .pricing_background {
+   position: relative;
    top: 700px;
-   width: 100%;
+   width: 1920px;
+   left: 50%;
+   margin-left: -952px;
  }
  .costs__header_container {
-   top: 0;
-   width: 414px;
+   top: -80px;
+   width: 1250px;
+   left: 50%;
+   margin-left: -632px;
+ }
+ .costs__header_container div {
+   left: 49%;
  }
  .pricing_container {
-   margin: 0;
    top: 0;
    padding: 0;
-   width: 100%;
+   left: 50%;
+   margin-left: -215px;
+   background: black;
  }
  .pricing_free_box {
    left: 0;
@@ -700,36 +751,39 @@ body>header {
    width: 414px;
    display: block;
  }
- .app_container {
-   top: 0;
+ .app {
+   position: relative;
+   top: 868px;
    width: 414px;
-   text-align: center;
+   left: 50%;
  }
  .download {
-   top: 65px;
-   left: 0;
+   top: 100px;
+   left: 580px;
    margin: 0;
    font-size: 24px;
    display: block;
  }
  .android_logo {
-   left: 110px;
-   top: 150px;
-   margin: 0;
+   left: 650px;
+   top: 166px;
    padding: 0;
    display: block;
  }
  .apple_logo {
-   left: 110px;
-   top: 230px;
-   margin: 0;
+   left: 650px;
+   top: 226px;
    padding: 0;
    display: block;
  }
+ footer {
+   position: relative;
+   left: 50%;
+   margin-left: 360px;
+ }
  .media_wrapper {
-   left: 120px;
+   left: 26.5%;
    width: 414px;
-   grid-template-columns: 1fr 1fr 1fr;
  }
  .ig_media_circle {
    width: 60px;
@@ -740,22 +794,22 @@ body>header {
  .fb_media_circle {
    width: 60px;
    padding: 0;
-   left: -30px;
+   left: -70px;
    display: inline-block;
  }
  .twitter_media_circle {
    width: 60px;
    padding: 0;
-   left: 30px;
+   left: 70px;
    top: -5px;
    display: inline-block;
  }
  .trial_button {
    top: 110px;
-   left: 70px;
+   left: 465px;
  }
  .footer_nav {
-   left: -6px;
+   left: 380px;
    top: 230px;
  }
  .footer_container {
@@ -768,7 +822,4 @@ body>header {
  }
 }
 
-@media (min-width: 800px){
-
-
-}
+/*iPhone 6 Plus */
