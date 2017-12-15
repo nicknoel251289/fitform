@@ -498,12 +498,17 @@ body>header {
   font-size: 18px;
   font-weight: lighter;
 }
+.start_button_free:hover{
+  color: #111111;
+  background: white;
+  opacity: .75;
+}
 .start_button_standard {
   position: relative;
   top: 1px;
   padding: 9px 72px;
-  background: #fe3600;
-  opacity: .7;
+  background: white;
+  opacity: .75;
   color: #333333;
   text-decoration: none;
   -moz-box-shadow: 1px 2px 30px #1e1e1e;
@@ -514,6 +519,10 @@ body>header {
   font-size: 20px;
   border-radius: 5px;
   font-weight: lighter;
+}
+.start_button_standard:hover{
+  color: white;
+  background: #fe3600;
 }
 .start_button_premium {
   position: relative;
@@ -531,7 +540,11 @@ body>header {
   border-radius: 5px;
   font-weight: lighter;
 }
-
+.start_button_premium:hover{
+  color: #111111;
+  background: white;
+  opacity: .75;
+}
 .pricing_background {
   width: 1920px;
   position: relative;
@@ -704,13 +717,14 @@ body>header {
 @media (max-width: 1250px){
   html {
     background: black;
-    height: 5800px;
+    height: 0;
   }
   body {
     padding: 0;
     margin: 0;
     position: relative;
     top: -40px;
+    height: 6000px;
   }
   #center_everything {
     position: relative;
@@ -718,12 +732,17 @@ body>header {
     left: -100px;
     margin-left: 100px;
     padding: 0;
-    height: 5946px;
+    height: 6200px;
     overflow-y: hidden;
     overflow-x: hidden;
+    top: -75px;
   }
   #logo {
-    display: none;
+    top: 450px;
+    left: 50%;
+    margin-left: -105px;
+    width: 220px;
+    position: relative;
   }
   .nav_background {
     position: relative;
@@ -759,15 +778,13 @@ body>header {
     top: -24px;
     font-size: 35px;
   }
-  .button_wrapper {
-    top: -420px;
-    left: 50%;
-    margin-left: -170px;
-  }
   .subslogan{
     top: -20px;
     font-size: 25px;
     left: 584px;
+  }
+  .button_wrapper{
+    top: -400px;
   }
   .about_info{
     left: 50%;
@@ -775,6 +792,9 @@ body>header {
   }
   .about_header{
 
+  }
+  #features {
+    height: 1300px;
   }
   .feature_container {
     position: relative;
@@ -792,7 +812,7 @@ body>header {
     left: 46%;
   }
   .shape_container {
-    height: 2000px;
+    height: 2150px;
     width: 1920px;
   }
   .shape {
@@ -822,7 +842,7 @@ body>header {
   .right_features {
     width: 100%;
     left: 0;
-    padding-top: 50px;
+    padding-top: 90px;
   }
   .right_features_header_text{
     font-size: 26px;
@@ -842,6 +862,7 @@ body>header {
     display: block;
     width: 230px;
     left: 71px;
+    top: 45px;
   }
   .pricing_background {
     position: relative;
@@ -931,13 +952,13 @@ body>header {
   }
   .android_logo {
     left: 650px;
-    top: 166px;
+    top: 180px;
     padding: 0;
     display: block;
   }
   .apple_logo {
     left: 650px;
-    top: 226px;
+    top: 240px;
     padding: 0;
     display: block;
   }
@@ -974,6 +995,9 @@ body>header {
     top: 140px;
     left: 595px;
   }
+  .trial_button a {
+    left: 8px;
+  }
   .footer_nav {
     left: 380px;
     top: 230px;
@@ -989,35 +1013,36 @@ body>header {
 }
 
 @media (max-width: 570px){
-  html {
-    height: 5890px;
+  body{
+    height: 5960px;
   }
-  .center_everything{
-    height: 5890px;
+  #center_everything{
+    height: 6220px;
   }
   .slogan{
-    font-size: 21px;
-    left: 789px;
+    font-size: 20px;
+    left: 796px;
   }
   .subslogan{
-    font-size: 18px;
-    left: 640px;
+    font-size: 17px;
+    left: 646px;
   }
   .button_wrapper{
     width: 220px;
     height: 45px;
-    left: 242px;
+    margin-left: -110px;
+    top: -450px;
   }
   .button_wrapper a {
     font-size: 20px;
     width: 380px;
     padding: 0;
-    left: 50px;
+    left: 46px;
     top: 10px;
   }
   .about_info{
     left: 50%;
-    margin-left: -126px;
+    margin-left: -124px;
     width: 260px;
   }
   .about_header{
@@ -1046,7 +1071,7 @@ body>header {
   .right_features {
     width: 100%;
     left: -7px;
-    padding-top: 50px;
+    padding-top: 90px;
   }
   .right_features_header_text{
     font-size: 22px;
@@ -1093,7 +1118,7 @@ body>header {
     font-size: 20px;
     width: 380px;
     padding: 0;
-    left: 40px;
+    left: 48px;
     top: 12px;
   }
   .media_wrapper{
@@ -1107,7 +1132,8 @@ body>header {
     left: 45px;
   }
   footer{
-    top: -750px;
+    top: -720px;
+    z-index: 600;
   }
 }
 
