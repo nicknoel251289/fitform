@@ -1,1114 +1,1114 @@
-/*You can use this to center everything rather than have to do it individually
-but what is extra is that it keeps everything within THIS container, so
-incase you zoom out, everything stays within and does not spread. Like if I had
-and element floated left, if I zoomed out it would stik to the left of the screen
-while everything else shrunk to a smaller size. Now it will stick to the left of the
-container and shrink with everything else*/
+ /*You can use this to center everything rather than have to do it individually
+ but what is extra is that it keeps everything within THIS container, so
+ incase you zoom out, everything stays within and does not spread. Like if I had
+ and element floated left, if I zoomed out it would stik to the left of the screen
+ while everything else shrunk to a smaller size. Now it will stick to the left of the
+ container and shrink with everything else*/
 #center_everything {
- height: 5153px;
- width: 100%;
- overflow: hidden;
+  height: 5153px;
+  width: 100%;
+  overflow: hidden;
 }
 
 html {
- overflow-x: hidden;
- padding: 0;
- margin: 0;
- background-color: white;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: white;
 }
 /*getting rid of the background made everything fit the screen size for devices.
 otherwise there was a 40px+ gap */
 body {
- color: white;
- z-index: -500;
- padding: 0;
- margin: 0;
+  color: white;
+  z-index: -500;
+  padding: 0;
+  margin: 0;
 }
 
 body>header {
- /* background: url('../Pictures/Site_backgrounds/Dashboard_background.jpg'); */
+  /* background: url('../Pictures/Site_backgrounds/Dashboard_background.jpg'); */
 }
 
 #logo {
- position: relative;
- width: 130px;
- left: 50%;
- margin-left: -500px;
- z-index: 100;
- top: 25px;
+  position: relative;
+  width: 130px;
+  left: 50%;
+  margin-left: -500px;
+  z-index: 100;
+  top: 25px;
 }
 
 .nav_background {
- width: 1920px;
- background: black;
- opacity: .25;
- height: 90px;
- position: fixed;
- top: 0px;
- left: 50%;
- margin-left: -954px;
+  width: 1920px;
+  background: black;
+  opacity: .25;
+  height: 90px;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  margin-left: -954px;
 }
 
 #header_nav {
- position: fixed;
- width: 1920px;
- z-index: 1000;
- top: 18px;
- left: 50%;
- margin-left: -1152px;
+  position: fixed;
+  width: 1920px;
+  z-index: 1000;
+  top: 18px;
+  left: 50%;
+  margin-left: -1152px;
 }
 
 #header_nav ul {
- position: relative;
- left: 70%;
+  position: relative;
+  left: 70%;
 }
 
 #header_nav ul li {
- position: relative;
- display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 #header_nav ul li a {
- position: relative;
- text-decoration: none;
- padding: 20px 20px;
- color: white;
- font-family: 'Poiret One', cursive;
+  position: relative;
+  text-decoration: none;
+  padding: 20px 20px;
+  color: white;
+  font-family: 'Poiret One', cursive;
 }
 #header_nav ul li a:hover {
- border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
 }
 .background_container {
- position: relative;
- /* See above why we don't need to do this anymore!!! */
- left: 50%;
- margin-left: -860px;
- width: 1920px;
- display: grid;
- grid-template-columns: 1fr;
+  position: relative;
+  /* See above why we don't need to do this anymore!!! */
+  left: 50%;
+  margin-left: -860px;
+  width: 1920px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .image_background {
- position: relative;
- overflow: hidden;
- left: 50%;
- margin-left: -1052px;
- top: -100px;
- z-index: -100;
- width: 100%;
- display: grid;
- grid-template-columns: 1fr;
+  position: relative;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -1052px;
+  top: -100px;
+  z-index: -100;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /*.slogan_container {
- position: relative;
- width: 1920px;
- height: 100px;
- background: #1e1e1e;
- top: -565px;
- opacity: .75;
- left: 50%;
- margin-left: -952px;
+  position: relative;
+  width: 1920px;
+  height: 100px;
+  background: #1e1e1e;
+  top: -565px;
+  opacity: .75;
+  left: 50%;
+  margin-left: -952px;
 }*/
 
 .slogan {
- position: relative;
- top: -680px;
- left: 50%;
- margin: 0 0 0 -405px;
- font-family: 'Audiowide', cursive;
- font-size: 55px;
+  position: relative;
+  top: -680px;
+  left: 50%;
+  margin: 0 0 0 -405px;
+  font-family: 'Audiowide', cursive;
+  font-size: 55px;
 }
 .subslogan{
- position: relative;
- top: -660px;
- left: 50%;
- margin: 0 0 0 -220px;
- font-family: 'Poiret One', cursive;
- font-size: 30px;
+  position: relative;
+  top: -660px;
+  left: 50%;
+  margin: 0 0 0 -220px;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
 }
 .orange {
- color: #fe3600;
+  color: #fe3600;
 }
 
 .button_wrapper {
- position: relative;
- top: -520px;
- left: 50%;
- margin-left: -157px;
- text-decoration: none;
- background: #00ff94;
- border-radius: 7px;
- width: 340px;
- height: 60px;
- -moz-box-shadow: 1px 2px 30px #1e1e1e;
- -webkit-box-shadow: 1px 2px 30px #1e1e1e;
- box-shadow: 1px 2px 30px black;
- border-radius: 30px;
+  position: relative;
+  top: -520px;
+  left: 50%;
+  margin-left: -157px;
+  text-decoration: none;
+  background: #00ff94;
+  border-radius: 7px;
+  width: 340px;
+  height: 60px;
+  -moz-box-shadow: 1px 2px 30px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
+	box-shadow: 1px 2px 30px black;
+  border-radius: 30px;
 }
 
 .button_wrapper:hover{
- -moz-box-shadow: 1px 2px 30px #e3e3e3;
- -webkit-box-shadow: 1px 2px 30px #e3e3e3;
- box-shadow: 1px 2px 30px #e3e3e3;
+  -moz-box-shadow: 1px 2px 30px #e3e3e3;
+  -webkit-box-shadow: 1px 2px 30px #e3e3e3;
+	box-shadow: 1px 2px 30px #e3e3e3;
 }
 
 .button_wrapper a {
- position: relative;
- top: 14px;
- left: 5px;
- color: #333333;
- text-decoration: none;
- font-size: 25px;
- padding: 14px 80px;
- font-family: 'Poiret One', cursive;
- font-weight: bold;
+  position: relative;
+  top: 14px;
+  left: 5px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 14px 80px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
 }
 
 .about_container {
- width: 100%;
- position: relative;
- top: -410px;
- z-index: -300;
- left: 50%;
- margin: 0 0 0 -952px;
+  width: 100%;
+  position: relative;
+  top: -410px;
+  z-index: -300;
+  left: 50%;
+  margin: 0 0 0 -952px;
 }
 
 .about_info{
- position: relative;
- top: -1080px;
- width: 400px;
- left: 50%;
- margin-left: 280px;
+  position: relative;
+  top: -1080px;
+  width: 400px;
+  left: 50%;
+  margin-left: 280px;
 }
 
 .about_header{
- font-size: 39px;
- position: relative;
- top: -45px;
+  font-size: 39px;
+  position: relative;
+  top: -45px;
 }
 
 .about_info_text {
- color: white;
- font-family: 'Poiret One', cursive;
- line-height: 45px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  line-height: 45px;
 }
 
 .shape_container {
- position: relative;
- top: -610px;
-  overflow:hidden;
-  height: 1200px;
-  width: 1920px;
-  left: 50%;
-  margin-left: -952px;
-  background-color: #141212;
-  /* See above why we don't need to do this anymore!!!
-  I rpob don't even need THIS container
-  left: 50%;
-  margin-left: -952px;*/
+  position: relative;
+  top: -610px;
+   overflow:hidden;
+   height: 1200px;
+   width: 1920px;
+   left: 50%;
+   margin-left: -952px;
+   background-color: #141212;
+   /* See above why we don't need to do this anymore!!!
+   I rpob don't even need THIS container
+   left: 50%;
+   margin-left: -952px;*/
 }
 
 /* .shape {
- height:1400px;
- width:1920px;
-   background: #0d0d0d; /* For browsers that do not support gradients
-   background: -webkit-linear-gradient(left, #0c0a09, #171514); /* For Safari 5.1 to 6.0
-   background: -o-linear-gradient(right, #0c0a09, #171514); /* For Opera 11.1 to 12.0
-   background: -moz-linear-gradient(right, #0c0a09, #171514); /* For Firefox 3.6 to 15
-   background: linear-gradient(to right, #0c0a09, #171514); /* Standard syntax
- shape-outside: polygon(100% 100%, 100% 0, 100% 100%, 100% 100%);
- clip-path: polygon(0% 0%, 100% 11.5%, 100% 88.5%, 0% 100%);
- z-index: 50;
+  height:1400px;
+  width:1920px;
+    background: #0d0d0d; /* For browsers that do not support gradients
+    background: -webkit-linear-gradient(left, #0c0a09, #171514); /* For Safari 5.1 to 6.0
+    background: -o-linear-gradient(right, #0c0a09, #171514); /* For Opera 11.1 to 12.0
+    background: -moz-linear-gradient(right, #0c0a09, #171514); /* For Firefox 3.6 to 15
+    background: linear-gradient(to right, #0c0a09, #171514); /* Standard syntax
+  shape-outside: polygon(100% 100%, 100% 0, 100% 100%, 100% 100%);
+  clip-path: polygon(0% 0%, 100% 11.5%, 100% 88.5%, 0% 100%);
+  z-index: 50;
 }
 */
 
 #features {
- height: 1160px;
- position: relative;
- top: -290px;
- z-index: 500;
+  height: 1160px;
+  position: relative;
+  top: -290px;
+  z-index: 500;
 }
 .feature_container {
- position: relative;
- left: 50%;
- margin-left: -148px;
- z-index: 50;
- width: 580px;
- height: 60px;
- top: -410px;
- border-radius: 6px;
- opacity: .75;
- z-index: 200;
+  position: relative;
+  left: 50%;
+  margin-left: -148px;
+  z-index: 50;
+  width: 580px;
+  height: 60px;
+  top: -410px;
+  border-radius: 6px;
+  opacity: .75;
+  z-index: 200;
 }
 
 .feature_container div {
- position: relative;
- font-size: 50px;
- font-family: 'Poiret One', cursive;
- color: white;
+  position: relative;
+  font-size: 50px;
+  font-family: 'Poiret One', cursive;
+  color: white;
 }
 
 .info_container {
- position: relative;
- top: 500px;
- margin: 0 20%;
+  position: relative;
+  top: 500px;
+  margin: 0 20%;
 }
 
 .left_features {
- display: inline-block;
- width: 32.5%;
- position: relative;
- top: -200px;
- left: 75px;
+  display: inline-block;
+  width: 32.5%;
+  position: relative;
+  top: -200px;
+  left: 75px;
 }
 
 .left_features_header_text {
- color: #fe3600;
- font-size: 26px;
- font-weight: bolder;
- font-family: 'Audiowide', cursive;
+  color: #fe3600;
+  font-size: 26px;
+  font-weight: bolder;
+  font-family: 'Audiowide', cursive;
 }
 
 #left_features_points_text {
- font-size: 14px;
- font-family: 'Audiowide', cursive;
- color: #b7b7b7;
- padding-bottom: 102px;
+  font-size: 14px;
+  font-family: 'Audiowide', cursive;
+  color: #b7b7b7;
+  padding-bottom: 102px;
 }
 
 .phone_container {
- display: inline-block;
- width: 33%;
- position: relative;
- top: -240px;
+  display: inline-block;
+  width: 33%;
+  position: relative;
+  top: -240px;
 }
 
 .phone_vector {
- width: 300px;
- position: relative;
- left: 45px;
- padding-bottom: 20px;
+  width: 300px;
+  position: relative;
+  left: 45px;
+  padding-bottom: 20px;
 }
 
 .right_features {
- display: inline-block;
- width: 32.5%;
- position: relative;
- top: -180px;
- left: 90px;
+  display: inline-block;
+  width: 32.5%;
+  position: relative;
+  top: -180px;
+  left: 90px;
 }
 
 .right_features_header_text {
- color: #fe3600;
- font-size: 26px;
- font-weight: bolder;
- font-family: 'Audiowide', cursive;
+  color: #fe3600;
+  font-size: 26px;
+  font-weight: bolder;
+  font-family: 'Audiowide', cursive;
 }
 
 #right_features_points_text {
- font-size: 14px;
- font-family: 'Audiowide', cursive;
- color: #b7b7b7;
- padding-bottom: 102px;
+  font-size: 14px;
+  font-family: 'Audiowide', cursive;
+  color: #b7b7b7;
+  padding-bottom: 102px;
 }
 
 .right_features_text {
- color: #fe3600;
- font-size: 32px;
- font-weight: bolder;
+  color: #fe3600;
+  font-size: 32px;
+  font-weight: bolder;
 }
 
 #costs {
- position: relative;
- width: 1920px;
- left: 50%;
- margin-left: -960px;
- top: -450px;
- z-index: 100;
+  position: relative;
+  width: 1920px;
+  left: 50%;
+  margin-left: -960px;
+  top: -450px;
+  z-index: 100;
 }
 
 .costs__header_container {
- position: relative;
- z-index: 50;
- border-radius: 6px;
- opacity: .75;
- top: -1300px;
- left: 50%;
- margin-left: -80px;
+  position: relative;
+  z-index: 50;
+  border-radius: 6px;
+  opacity: .75;
+  top: -1300px;
+  left: 50%;
+  margin-left: -80px;
 }
 
 .cost_text {
- position: relative;
- top: 17px;
- font-size: 45px;
- font-family: 'Poiret One', cursive;
+  position: relative;
+  top: 17px;
+  font-size: 45px;
+  font-family: 'Poiret One', cursive;
 }
 
 .pricing_container {
- position: relative;
- margin: 0 18%;
- text-align: center;
- z-index: 100;
- top: -1150px;
+  position: relative;
+  margin: 0 18%;
+  text-align: center;
+  z-index: 100;
+  top: -1150px;
 }
 
 .pricing_free_box {
- position: relative;
- width: 20%;
- height: 380px;
- display: inline-block;
- background: #161616;
- border-radius: 30px;
- left: -110px;
- /*-moz-box-shadow: 1px 2px 50px #1e1e1e;
- -webkit-box-shadow: 1px 2px 50px #1e1e1e;
- box-shadow: 1px 2px 50px #1e1e1e;*/
- border-top: 1px solid #aa2500;
- border-bottom: 1px solid #aa2500;
+  position: relative;
+  width: 20%;
+  height: 380px;
+  display: inline-block;
+  background: #161616;
+  border-radius: 30px;
+  left: -110px;
+  /*-moz-box-shadow: 1px 2px 50px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 50px #1e1e1e;
+	box-shadow: 1px 2px 50px #1e1e1e;*/
+  border-top: 1px solid #aa2500;
+  border-bottom: 1px solid #aa2500;
 }
 
 .pricing_standard_box {
- position: relative;
- top: 15px;
- width: 22%;
- height: 430px;
- display: inline-block;
- background: #0a0a0a;/*#aa2500;*/
- border-radius: 35px;
- /*-moz-box-shadow: 1px 2px 50px #fe3600;
- -webkit-box-shadow: 1px 2px 50px #fe3600;
- box-shadow: 1px 2px 50px #fe3600;*/
- border-top: 1px solid #fe3600;
- border-bottom: 1px solid #fe3600;
- border-left: 1px solid #fe3600;
- border-right: 1px solid #fe3600;
+  position: relative;
+  top: 15px;
+  width: 22%;
+  height: 430px;
+  display: inline-block;
+  background: #0a0a0a;/*#aa2500;*/
+  border-radius: 35px;
+  /*-moz-box-shadow: 1px 2px 50px #fe3600;
+  -webkit-box-shadow: 1px 2px 50px #fe3600;
+	box-shadow: 1px 2px 50px #fe3600;*/
+  border-top: 1px solid #fe3600;
+  border-bottom: 1px solid #fe3600;
+  border-left: 1px solid #fe3600;
+  border-right: 1px solid #fe3600;
 }
 
 .pricing_premium_box {
- position: relative;
- width: 20%;
- height: 380px;
- display: inline-block;
- background: #161616;
- border-radius: 30px;
- left: 110px;
- /*-moz-box-shadow: 1px 2px 50px #1e1e1e;
- -webkit-box-shadow: 1px 2px 50px #1e1e1e;
- box-shadow: 1px 2px 50px #1e1e1e;*/
- border-top: 1px solid #aa2500;
- border-bottom: 1px solid #aa2500;
+  position: relative;
+  width: 20%;
+  height: 380px;
+  display: inline-block;
+  background: #161616;
+  border-radius: 30px;
+  left: 110px;
+  /*-moz-box-shadow: 1px 2px 50px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 50px #1e1e1e;
+	box-shadow: 1px 2px 50px #1e1e1e;*/
+  border-top: 1px solid #aa2500;
+  border-bottom: 1px solid #aa2500;
 }
 
 .pricing_free_box:hover {
- -moz-box-shadow: 1px 2px 50px #aa2500;
- -webkit-box-shadow: 1px 2px 50px #aa2500;
- box-shadow: 1px 2px 50px #aa2500;
+  -moz-box-shadow: 1px 2px 50px #aa2500;
+  -webkit-box-shadow: 1px 2px 50px #aa2500;
+	box-shadow: 1px 2px 50px #aa2500;
 }
 .pricing_standard_box:hover {
- -moz-box-shadow: 1px 2px 50px #aa2500;
- -webkit-box-shadow: 1px 2px 50px #aa2500;
- box-shadow: 1px 2px 50px #aa2500;
+  -moz-box-shadow: 1px 2px 50px #aa2500;
+  -webkit-box-shadow: 1px 2px 50px #aa2500;
+	box-shadow: 1px 2px 50px #aa2500;
 }
 .pricing_premium_box:hover {
- -moz-box-shadow: 1px 2px 50px #aa2500;
- -webkit-box-shadow: 1px 2px 50px #aa2500;
- box-shadow: 1px 2px 50px #aa2500;
+  -moz-box-shadow: 1px 2px 50px #aa2500;
+  -webkit-box-shadow: 1px 2px 50px #aa2500;
+	box-shadow: 1px 2px 50px #aa2500;
 }
 
 .price_free_heading {
- padding: 20px;
- /*background: #161616;*/
- font-family: 'Anton', sans-serif;
- font-size: 21px;
- border-bottom: 3px solid #222222;
- font-weight: lighter;
+  padding: 20px;
+  /*background: #161616;*/
+  font-family: 'Anton', sans-serif;
+  font-size: 21px;
+  border-bottom: 3px solid #222222;
+  font-weight: lighter;
 }
 .free_points {
- padding: 10px;
- position: relative;
- top: 20px;
- font-family: 'Anton', sans-serif;
- font-size: 16px;
- font-weight: lighter;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+  font-family: 'Anton', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 .price_standard_heading {
- padding: 25px;
- /*background: #b02601;*/
- font-family: 'Anton', sans-serif;
- font-size: 23px;
- border-bottom: 3px solid #222222;
- font-weight: lighter;
+  padding: 25px;
+  /*background: #b02601;*/
+  font-family: 'Anton', sans-serif;
+  font-size: 23px;
+  border-bottom: 3px solid #222222;
+  font-weight: lighter;
 }
 .standard_points {
- padding: 12px;
- position: relative;
- top: 20px;
- font-family: 'Anton', sans-serif;
- font-size: 18px;
- font-weight: lighter;
+  padding: 12px;
+  position: relative;
+  top: 20px;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 .price_premium_heading {
- padding: 20px;
- /*background: #161616;*/
- font-family: 'Anton', sans-serif;
- font-size: 21px;
- border-bottom: 3px solid #222222;
- font-weight: lighter;
+  padding: 20px;
+  /*background: #161616;*/
+  font-family: 'Anton', sans-serif;
+  font-size: 21px;
+  border-bottom: 3px solid #222222;
+  font-weight: lighter;
 }
 .premium_points {
- padding: 10px;
- position: relative;
- top: 20px;
- font-family: 'Anton', sans-serif;
- font-size: 16px;
- font-weight: lighter;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+  font-family: 'Anton', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 .free_start_container {
- padding: 30px 18px 38px 18px;
- position: relative;
- top: 20px;
+  padding: 30px 18px 38px 18px;
+  position: relative;
+  top: 20px;
 }
 .standard_start_container {
- padding: 35px 20px 40px 20px;
- position: relative;
- top: 20px;
+  padding: 35px 20px 40px 20px;
+  position: relative;
+  top: 20px;
 }
 .premium_start_container {
- padding: 30px 18px 38px 18px;
- position: relative;
- top: 20px;
+  padding: 30px 18px 38px 18px;
+  position: relative;
+  top: 20px;
 }
 
 .start_button_free {
- padding: 9px 72px;
- background: black;
- text-decoration: none;
- -moz-box-shadow: 1px 1px 10px #111111;
- -webkit-box-shadow: 1px 1px 10px #111111;
- box-shadow: 1px 1px 10px #111111;
- border-radius: 3px;
- position: relative;
- top: 1px;
- font-family: 'Anton', sans-serif;
- color: white;
- font-size: 18px;
- font-weight: lighter;
+  padding: 9px 72px;
+  background: black;
+  text-decoration: none;
+  -moz-box-shadow: 1px 1px 10px #111111;
+  -webkit-box-shadow: 1px 1px 10px #111111;
+	box-shadow: 1px 1px 10px #111111;
+  border-radius: 3px;
+  position: relative;
+  top: 1px;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
 }
 .start_button_standard {
- position: relative;
- top: 1px;
- padding: 9px 72px;
- background: #fe3600;
- opacity: .7;
- color: #333333;
- text-decoration: none;
- -moz-box-shadow: 1px 2px 30px #1e1e1e;
- -webkit-box-shadow: 1px 2px 30px #1e1e1e;
- box-shadow: 1px 2px 30px #1e1e1e;
- border-radius: 3px;
- font-family: 'Anton', sans-serif;
- font-size: 20px;
- border-radius: 5px;
- font-weight: lighter;
+  position: relative;
+  top: 1px;
+  padding: 9px 72px;
+  background: #fe3600;
+  opacity: .7;
+  color: #333333;
+  text-decoration: none;
+  -moz-box-shadow: 1px 2px 30px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
+	box-shadow: 1px 2px 30px #1e1e1e;
+  border-radius: 3px;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: lighter;
 }
 .start_button_premium {
- position: relative;
- top: 1px;
- padding: 9px 72px;
- background: black;
- text-decoration: none;
- -moz-box-shadow: 1px 1px 10px #111111;
- -webkit-box-shadow: 1px 1px 10px #111111;
- box-shadow: 1px 1px 10px #111111;
- border-radius: 3px;
- font-family: 'Anton', sans-serif;
- color: white;
- font-size: 18px;
- border-radius: 5px;
- font-weight: lighter;
+  position: relative;
+  top: 1px;
+  padding: 9px 72px;
+  background: black;
+  text-decoration: none;
+  -moz-box-shadow: 1px 1px 10px #111111;
+  -webkit-box-shadow: 1px 1px 10px #111111;
+	box-shadow: 1px 1px 10px #111111;
+  border-radius: 3px;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: lighter;
 }
 
 .pricing_background {
- width: 1920px;
- position: relative;
- top: -375px;
- z-index: -10;
- left: 50%;
- margin-left: -952px;
+  width: 1920px;
+  position: relative;
+  top: -375px;
+  z-index: -10;
+  left: 50%;
+  margin-left: -952px;
 }
 
 .download {
- position: relative;
- top: 240px;
- left: 22%;
- font-family: 'Poiret One', cursive;
- font-size: 30px;
+  position: relative;
+  top: 240px;
+  left: 22%;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
 }
 
 .app {
- position: relative;
- top: -465px;
+  position: relative;
+  top: -465px;
 }
 
 .app_container {
- position: relative;
- width: 1920px;
- height: 500px;
- background: #fe3600;
- top: -868px;
- left: 50%;
- margin-left: -952px;
+  position: relative;
+  width: 1920px;
+  height: 500px;
+  background: #fe3600;
+  top: -868px;
+  left: 50%;
+  margin-left: -952px;
 }
 
 .android_logo {
- position: relative;
- top: 190px;
- left: 51%;
- width: 200px;
- -moz-box-shadow: 1px 2px 30px #1e1e1e;
- -webkit-box-shadow: 1px 2px 30px #1e1e1e;
- box-shadow: 1px 2px 30px #1e1e1e;
- border-radius: 6px;
+  position: relative;
+  top: 190px;
+  left: 51%;
+  width: 200px;
+  -moz-box-shadow: 1px 2px 30px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
+	box-shadow: 1px 2px 30px #1e1e1e;
+  border-radius: 6px;
 }
 
 .apple_logo {
- position: relative;
- top: 190px;
- left: 58%;
- width: 200px;
- -moz-box-shadow: 1px 2px 30px #1e1e1e;
- -webkit-box-shadow: 1px 2px 30px #1e1e1e;
- box-shadow: 1px 2px 30px #1e1e1e;
- border-radius: 6px;
+  position: relative;
+  top: 190px;
+  left: 58%;
+  width: 200px;
+  -moz-box-shadow: 1px 2px 30px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
+	box-shadow: 1px 2px 30px #1e1e1e;
+  border-radius: 6px;
 }
 
 .trial_button a {
- font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', cursive;
 }
 
 .footer_container {
- position: relative;
- background: #171514;
- width: 1920px;
- height: 465px;
- left: 50%;
- top: -1335px;
- margin-left: -952px;
+  position: relative;
+  background: #171514;
+  width: 1920px;
+  height: 465px;
+  left: 50%;
+  top: -1335px;
+  margin-left: -952px;
 }
 
 .media_wrapper {
- position: relative;
- top: 65px;
- left: 830px;
+  position: relative;
+  top: 65px;
+  left: 830px;
 }
 
 .fb_media_circle {
- position: relative;
- left: -135px;
- width: 75px;
- padding: 5px 5px;
- border-radius: 50%;
+  position: relative;
+  left: -135px;
+  width: 75px;
+  padding: 5px 5px;
+  border-radius: 50%;
 }
 
 .ig_media_circle {
- width: 75px;
- padding: 5px 5px;
- border-radius: 50%;
+  width: 75px;
+  padding: 5px 5px;
+  border-radius: 50%;
 }
 
 .twitter_media_circle {
- position: relative;
- width: 75px;
- padding: 5px 5px;
- left: 135px;
- border-radius: 50%;
+  position: relative;
+  width: 75px;
+  padding: 5px 5px;
+  left: 135px;
+  border-radius: 50%;
 }
 
 .trial_button {
- position: relative;
- top: 160px;
- left: 50%;
- margin-left: -170px;
- text-decoration: none;
- background: #00ff94;
- border-radius: 7px;
- width: 340px;
- height: 60px;
- -moz-box-shadow: 1px 2px 30px #1e1e1e;
- -webkit-box-shadow: 1px 2px 30px #1e1e1e;
- box-shadow: 1px 2px 30px black;
- border-radius: 30px;
+  position: relative;
+  top: 160px;
+  left: 50%;
+  margin-left: -170px;
+  text-decoration: none;
+  background: #00ff94;
+  border-radius: 7px;
+  width: 340px;
+  height: 60px;
+  -moz-box-shadow: 1px 2px 30px #1e1e1e;
+  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
+	box-shadow: 1px 2px 30px black;
+  border-radius: 30px;
 }
 
 .trial_button:hover{
- -moz-box-shadow: 1px 2px 30px #e3e3e3;
- -webkit-box-shadow: 1px 2px 30px #e3e3e3;
- box-shadow: 1px 2px 30px #e3e3e3;
+  -moz-box-shadow: 1px 2px 30px #e3e3e3;
+  -webkit-box-shadow: 1px 2px 30px #e3e3e3;
+	box-shadow: 1px 2px 30px #e3e3e3;
 }
 
 .trial_button a {
- position: relative;
- top: 16px;
- left: 5px;
- color: #333333;
- text-decoration: none;
- font-size: 25px;
- padding: 14px 80px;
- font-family: 'Poiret One', cursive;
- font-weight: bold;
+  position: relative;
+  top: 16px;
+  left: 5px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 14px 80px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
 }
 
 .footer_nav {
- position: relative;
- width: 1920px;
- z-index: 100;
- top: 195px;
- left: 38.5%;
+  position: relative;
+  width: 1920px;
+  z-index: 100;
+  top: 195px;
+  left: 38.5%;
 }
 
 .footer_nav ul li {
- position: relative;
- display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .footer_nav ul li a {
- position: relative;
- text-decoration: none;
- padding: 20px 20px;
- color: white;
- font-family: 'Poiret One', cursive;
+  position: relative;
+  text-decoration: none;
+  padding: 20px 20px;
+  color: white;
+  font-family: 'Poiret One', cursive;
 }
 .footer_nav ul li a:hover{
- border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
 }
 .all_rights {
- position: relative;
- left: 47%;
- top: 215px;
- font-family: 'Poiret One', cursive;
+  position: relative;
+  left: 47%;
+  top: 215px;
+  font-family: 'Poiret One', cursive;
 }
 
 @media (max-width: 1450px){
 
- .about_info {
-   margin-left: 150px;
- }
+  .about_info {
+    margin-left: 150px;
+  }
 
 }
 
 /*Make it fit to this size and then add a background and just keep everything centered so you don't have to keep scaling*/
 @media (max-width: 1250px){
- html {
-   background: black;
-   height: 5800px;
- }
- body {
-   padding: 0;
-   margin: 0;
-   position: relative;
-   top: -40px;
- }
- #center_everything {
-   position: relative;
-   width: 100%;
-   left: -100px;
-   margin-left: 100px;
-   padding: 0;
-   height: 5946px;
-   overflow-y: hidden;
-   overflow-x: hidden;
- }
- #logo {
-   display: none;
- }
- .nav_background {
-   position: relative;
-   top: 30px;
- }
- #header_nav {
-   position:relative;
-   top: -40px;
- }
- #header_nav ul {
-   left: 49%;
- }
- .background_container {
-   left: 50%;
-   margin-left: -952px;
- }
- .image_background {
-   position: relative;
-   overflow: hidden;
-   left: 50%;
-   margin-left: -652px;
-   width: 1300px;
- }
- .slogan_container {
-   position: relative;
-   width: 1350px;
-   top: -440px;
-   height: 70px;
-   left: 50%;
-   margin-left: -555px;
- }
- .slogan {
-   top: -24px;
-   font-size: 35px;
- }
- .button_wrapper {
-   top: -420px;
-   left: 50%;
-   margin-left: -170px;
- }
- .subslogan{
-   top: -20px;
-   font-size: 25px;
-   left: 584px;
- }
- .about_info{
-   left: 50%;
-   margin-left: -196px;
- }
- .about_header{
+  html {
+    background: black;
+    height: 5800px;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -40px;
+  }
+  #center_everything {
+    position: relative;
+    width: 100%;
+    left: -100px;
+    margin-left: 100px;
+    padding: 0;
+    height: 5946px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #logo {
+    display: none;
+  }
+  .nav_background {
+    position: relative;
+    top: 30px;
+  }
+  #header_nav {
+    position:relative;
+    top: -40px;
+  }
+  #header_nav ul {
+    left: 49%;
+  }
+  .background_container {
+    left: 50%;
+    margin-left: -952px;
+  }
+  .image_background {
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -652px;
+    width: 1300px;
+  }
+  .slogan_container {
+    position: relative;
+    width: 1350px;
+    top: -440px;
+    height: 70px;
+    left: 50%;
+    margin-left: -555px;
+  }
+  .slogan {
+    top: -24px;
+    font-size: 35px;
+  }
+  .button_wrapper {
+    top: -420px;
+    left: 50%;
+    margin-left: -170px;
+  }
+  .subslogan{
+    top: -20px;
+    font-size: 25px;
+    left: 584px;
+  }
+  .about_info{
+    left: 50%;
+    margin-left: -196px;
+  }
+  .about_header{
 
- }
- .feature_container {
-   position: relative;
-   margin-left: -717px;
-   padding: 0px;
-   left: 50%;
-   top: -460px;
-   z-index: 500;
-   width: 1250px;
-   border-radius: 0;
-   height: 50px;
- }
- .feature_container div {
-   top: 10px;
-   left: 46%;
- }
- .shape_container {
-   height: 2000px;
-   width: 1920px;
- }
- .shape {
-   position: relative;
-   width: 3410px;
-   height: 2150px;
-   top: -30px;
- }
- .info_container {
-   width: 414px;
-   text-align: center;
-   left: 50%;
-   margin-left: -956px;
- }
- .left_features {
-   width: 100%;
-   left: 0;
- }
- .left_features_header_text {
-   font-size: 26px;
-   padding-bottom: 10px;
- }
- #left_features_points_text {
-   font-size: 14px;
-   padding-bottom: 45px;
- }
- .right_features {
-   width: 100%;
-   left: 0;
-   padding-top: 50px;
- }
- .right_features_header_text{
-   font-size: 26px;
-   padding-bottom: 10px;
- }
- #right_features_points_text {
-   font-size: 14px;
-   padding-bottom: 45px;
- }
- .phone_container {
-   left: 15px;
-   margin: 0;
-   width: 414px;
-   top: -200px;
- }
- .phone_vector {
-   display: block;
-   width: 230px;
-   left: 71px;
- }
- .pricing_background {
-   position: relative;
-   top: 744px;
-   width: 1920px;
-   left: 50%;
-   margin-left: -842px;
- }
- .costs__header_container {
-   top: -550px;
-   width: 1250px;
-   left: 50%;
-   margin-left: -695px;
- }
- .costs__header_container div {
-   left: 49%;
- }
- .pricing_container {
-   top: -500px;
-   padding: 0;
-   left: 50%;
-   margin-left: -205px;
-   width: 110px;
- }
- .pricing_free_box {
-   left: 48px;
-   margin: 0;
-   top: 60px;
-   padding: 0;
-   width: 314px;
-   height: 314px;
-   display: block;
-   line-height: 20px;
- }
- .start_button_free{
-   top: 0px;
- }
- .free_points{
-   padding: 4px;
- }
- .pricing_standard_box {
-   left: 48px;
-   margin: 0;
-   top: 90px;
-   padding: 0;
-   width: 314px;
-   height: 314px;
-   display: block;
-   line-height: 20px;
- }
- .start_button_standard{
-   top: -8px;
-   padding: 8px 75px;
-   font-size: 18px;
- }
- .standard_points{
-   padding: 4px;
- }
- .pricing_premium_box {
-   left: 48px;
-   margin: 0;
-   top: 120px;
-   padding: 0;
-   width: 314px;
-   height: 314px;
-   display: block;
-   line-height: 20px;
- }
- .start_button_premium{
-   top: 0px;
- }
- .premium_points{
-   padding: 4px;
- }
- .app {
-   position: relative;
-   top: 152px;
-   width: 414px;
-   left: 50%;
- }
- .download {
-   top: 100px;
-   left: 570px;
-   margin: 0;
-   font-size: 24px;
-   display: block;
- }
- .android_logo {
-   left: 650px;
-   top: 166px;
-   padding: 0;
-   display: block;
- }
- .apple_logo {
-   left: 650px;
-   top: 226px;
-   padding: 0;
-   display: block;
- }
- footer {
-   position: relative;
-   left: 50%;
-   margin-left: 360px;
-   top: -716px;
- }
- .media_wrapper {
-   left: 26.5%;
-   width: 414px;
- }
- .ig_media_circle {
-   width: 60px;
-   padding: 0;
-   left: 0;
-   display: inline-block;
- }
- .fb_media_circle {
-   width: 60px;
-   padding: 0;
-   left: -75px;
-   display: inline-block;
- }
- .twitter_media_circle {
-   width: 60px;
-   padding: 0;
-   left: 68px;
-   top: -5px;
-   display: inline-block;
- }
- .trial_button {
-   top: 140px;
-   left: 595px;
- }
- .footer_nav {
-   left: 380px;
-   top: 230px;
- }
- .footer_container {
-   top: 0;
-   left: 0;
- }
- .all_rights {
-   left: 530px;
-   top: 243px;
- }
+  }
+  .feature_container {
+    position: relative;
+    margin-left: -717px;
+    padding: 0px;
+    left: 50%;
+    top: -460px;
+    z-index: 500;
+    width: 1250px;
+    border-radius: 0;
+    height: 50px;
+  }
+  .feature_container div {
+    top: 10px;
+    left: 46%;
+  }
+  .shape_container {
+    height: 2000px;
+    width: 1920px;
+  }
+  .shape {
+    position: relative;
+    width: 3410px;
+    height: 2150px;
+    top: -30px;
+  }
+  .info_container {
+    width: 414px;
+    text-align: center;
+    left: 50%;
+    margin-left: -956px;
+  }
+  .left_features {
+    width: 100%;
+    left: 0;
+  }
+  .left_features_header_text {
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+  #left_features_points_text {
+    font-size: 14px;
+    padding-bottom: 45px;
+  }
+  .right_features {
+    width: 100%;
+    left: 0;
+    padding-top: 50px;
+  }
+  .right_features_header_text{
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+  #right_features_points_text {
+    font-size: 14px;
+    padding-bottom: 45px;
+  }
+  .phone_container {
+    left: 15px;
+    margin: 0;
+    width: 414px;
+    top: -200px;
+  }
+  .phone_vector {
+    display: block;
+    width: 230px;
+    left: 71px;
+  }
+  .pricing_background {
+    position: relative;
+    top: 744px;
+    width: 1920px;
+    left: 50%;
+    margin-left: -842px;
+  }
+  .costs__header_container {
+    top: -550px;
+    width: 1250px;
+    left: 50%;
+    margin-left: -695px;
+  }
+  .costs__header_container div {
+    left: 49%;
+  }
+  .pricing_container {
+    top: -500px;
+    padding: 0;
+    left: 50%;
+    margin-left: -205px;
+    width: 110px;
+  }
+  .pricing_free_box {
+    left: 48px;
+    margin: 0;
+    top: 60px;
+    padding: 0;
+    width: 314px;
+    height: 314px;
+    display: block;
+    line-height: 20px;
+  }
+  .start_button_free{
+    top: 0px;
+  }
+  .free_points{
+    padding: 4px;
+  }
+  .pricing_standard_box {
+    left: 48px;
+    margin: 0;
+    top: 90px;
+    padding: 0;
+    width: 314px;
+    height: 314px;
+    display: block;
+    line-height: 20px;
+  }
+  .start_button_standard{
+    top: -8px;
+    padding: 8px 75px;
+    font-size: 18px;
+  }
+  .standard_points{
+    padding: 4px;
+  }
+  .pricing_premium_box {
+    left: 48px;
+    margin: 0;
+    top: 120px;
+    padding: 0;
+    width: 314px;
+    height: 314px;
+    display: block;
+    line-height: 20px;
+  }
+  .start_button_premium{
+    top: 0px;
+  }
+  .premium_points{
+    padding: 4px;
+  }
+  .app {
+    position: relative;
+    top: 152px;
+    width: 414px;
+    left: 50%;
+  }
+  .download {
+    top: 100px;
+    left: 570px;
+    margin: 0;
+    font-size: 24px;
+    display: block;
+  }
+  .android_logo {
+    left: 650px;
+    top: 166px;
+    padding: 0;
+    display: block;
+  }
+  .apple_logo {
+    left: 650px;
+    top: 226px;
+    padding: 0;
+    display: block;
+  }
+  footer {
+    position: relative;
+    left: 50%;
+    margin-left: 360px;
+    top: -716px;
+  }
+  .media_wrapper {
+    left: 26.5%;
+    width: 414px;
+  }
+  .ig_media_circle {
+    width: 60px;
+    padding: 0;
+    left: 0;
+    display: inline-block;
+  }
+  .fb_media_circle {
+    width: 60px;
+    padding: 0;
+    left: -75px;
+    display: inline-block;
+  }
+  .twitter_media_circle {
+    width: 60px;
+    padding: 0;
+    left: 68px;
+    top: -5px;
+    display: inline-block;
+  }
+  .trial_button {
+    top: 140px;
+    left: 595px;
+  }
+  .footer_nav {
+    left: 380px;
+    top: 230px;
+  }
+  .footer_container {
+    top: 0;
+    left: 0;
+  }
+  .all_rights {
+    left: 530px;
+    top: 243px;
+  }
 }
 
 @media (max-width: 570px){
- html {
-   height: 5890px;
- }
- .center_everything{
-   height: 5890px;
- }
- .slogan{
-   font-size: 21px;
-   left: 789px;
- }
- .subslogan{
-   font-size: 18px;
-   left: 640px;
- }
- .button_wrapper{
-   width: 220px;
-   height: 45px;
-   left: 242px;
- }
- .button_wrapper a {
-   font-size: 20px;
-   width: 380px;
-   padding: 0;
-   left: 50px;
-   top: 10px;
- }
- .about_info{
-   left: 50%;
-   margin-left: -126px;
-   width: 260px;
- }
- .about_header{
-   font-size: 18pt;
- }
- .feature_container{
-   color: white;
- }
- .feature_container div{
-   font-size: 28px;
-   color: white;
-   left: 630px;
- }
- .left_features{
-   left: -7px;
- }
- .left_features_header_text {
-   font-size: 22px;
- }
- #left_features_points_text {
-   font-size: 13px;
-   padding-bottom: 50px;
-   position: relative;
-   left: 0px;
- }
- .right_features {
-   width: 100%;
-   left: -7px;
-   padding-top: 50px;
- }
- .right_features_header_text{
-   font-size: 22px;
- }
- #right_features_points_text {
-   font-size: 13px;
-   padding-bottom: 50px;
-   position: relative;
- }
- .costs__header_container{
-   left: 990px;
- }
- .cost_text {
-   font-size: 28px;
- }
- .pricing_free_box{
-   width: 270px;
-   left: 70px;
- }
- .pricing_standard_box{
-   width: 270px;
-   left: 70px;
- }
- .pricing_premium_box{
-   width: 270px;
-   left: 70px;
- }
- .download{
-   font-size: 22px;
-   left: 584px;
- }
- .apple_logo{
-   left: 645px;
- }
- .android_logo{
-   left: 645px;
- }
- .trial_button{
-   width: 220px;
-   height: 45px;
-   left: 650px;
- }
- .trial_button a {
-   font-size: 20px;
-   width: 380px;
-   padding: 0;
-   left: 40px;
-   top: 12px;
- }
- .media_wrapper{
-   left: 50%;
-   margin-left: -466px;
- }
- .fb_media_circle{
-   left: -45px;
- }
- .twitter_media_circle {
-   left: 45px;
- }
- footer{
-   top: -750px;
- }
+  html {
+    height: 5890px;
+  }
+  .center_everything{
+    height: 5890px;
+  }
+  .slogan{
+    font-size: 21px;
+    left: 789px;
+  }
+  .subslogan{
+    font-size: 18px;
+    left: 640px;
+  }
+  .button_wrapper{
+    width: 220px;
+    height: 45px;
+    left: 242px;
+  }
+  .button_wrapper a {
+    font-size: 20px;
+    width: 380px;
+    padding: 0;
+    left: 50px;
+    top: 10px;
+  }
+  .about_info{
+    left: 50%;
+    margin-left: -126px;
+    width: 260px;
+  }
+  .about_header{
+    font-size: 18pt;
+  }
+  .feature_container{
+    color: white;
+  }
+  .feature_container div{
+    font-size: 28px;
+    color: white;
+    left: 630px;
+  }
+  .left_features{
+    left: -7px;
+  }
+  .left_features_header_text {
+    font-size: 22px;
+  }
+  #left_features_points_text {
+    font-size: 13px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 0px;
+  }
+  .right_features {
+    width: 100%;
+    left: -7px;
+    padding-top: 50px;
+  }
+  .right_features_header_text{
+    font-size: 22px;
+  }
+  #right_features_points_text {
+    font-size: 13px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  .costs__header_container{
+    left: 990px;
+  }
+  .cost_text {
+    font-size: 28px;
+  }
+  .pricing_free_box{
+    width: 270px;
+    left: 70px;
+  }
+  .pricing_standard_box{
+    width: 270px;
+    left: 70px;
+  }
+  .pricing_premium_box{
+    width: 270px;
+    left: 70px;
+  }
+  .download{
+    font-size: 22px;
+    left: 584px;
+  }
+  .apple_logo{
+    left: 645px;
+  }
+  .android_logo{
+    left: 645px;
+  }
+  .trial_button{
+    width: 220px;
+    height: 45px;
+    left: 650px;
+  }
+  .trial_button a {
+    font-size: 20px;
+    width: 380px;
+    padding: 0;
+    left: 40px;
+    top: 12px;
+  }
+  .media_wrapper{
+    left: 50%;
+    margin-left: -466px;
+  }
+  .fb_media_circle{
+    left: -45px;
+  }
+  .twitter_media_circle {
+    left: 45px;
+  }
+  footer{
+    top: -750px;
+  }
 }
 
 /*iPhone 6 Plus */
