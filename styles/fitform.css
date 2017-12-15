@@ -5,7 +5,7 @@ and element floated left, if I zoomed out it would stik to the left of the scree
 while everything else shrunk to a smaller size. Now it will stick to the left of the
 container and shrink with everything else*/
 #center_everything {
- height: 4200px;
+ height: 5153px;
  width: 100%;
  overflow: hidden;
 }
@@ -14,7 +14,7 @@ html {
  overflow-x: hidden;
  padding: 0;
  margin: 0;
-
+ background-color: white;
 }
 /*getting rid of the background made everything fit the screen size for devices.
 otherwise there was a 40px+ gap */
@@ -75,12 +75,14 @@ body>header {
  color: white;
  font-family: 'Poiret One', cursive;
 }
-
+#header_nav ul li a:hover {
+ border-bottom: 1px solid white;
+}
 .background_container {
  position: relative;
  /* See above why we don't need to do this anymore!!! */
  left: 50%;
- margin-left: -960px;
+ margin-left: -860px;
  width: 1920px;
  display: grid;
  grid-template-columns: 1fr;
@@ -90,7 +92,7 @@ body>header {
  position: relative;
  overflow: hidden;
  left: 50%;
- margin-left: -952px;
+ margin-left: -1052px;
  top: -100px;
  z-index: -100;
  width: 100%;
@@ -98,7 +100,7 @@ body>header {
  grid-template-columns: 1fr;
 }
 
-.slogan_container {
+/*.slogan_container {
  position: relative;
  width: 1920px;
  height: 100px;
@@ -107,102 +109,149 @@ body>header {
  opacity: .75;
  left: 50%;
  margin-left: -952px;
-}
+}*/
 
 .slogan {
  position: relative;
- top: 40px;
- left: 44%;
+ top: -680px;
+ left: 50%;
+ margin: 0 0 0 -405px;
  font-family: 'Audiowide', cursive;
+ font-size: 55px;
+}
+.subslogan{
+ position: relative;
+ top: -660px;
+ left: 50%;
+ margin: 0 0 0 -220px;
+ font-family: 'Poiret One', cursive;
+ font-size: 30px;
+}
+.orange {
+ color: #fe3600;
 }
 
 .button_wrapper {
  position: relative;
  top: -520px;
  left: 50%;
- margin-left: -127px;
+ margin-left: -157px;
  text-decoration: none;
- background: #fe3600;
- border-radius: 5px;
- width: 275px;
- height: 40px;
+ background: #00ff94;
+ border-radius: 7px;
+ width: 340px;
+ height: 60px;
  -moz-box-shadow: 1px 2px 30px #1e1e1e;
  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
  box-shadow: 1px 2px 30px black;
- border-radius: 3px;
+ border-radius: 30px;
+}
+
+.button_wrapper:hover{
+ -moz-box-shadow: 1px 2px 30px #e3e3e3;
+ -webkit-box-shadow: 1px 2px 30px #e3e3e3;
+ box-shadow: 1px 2px 30px #e3e3e3;
 }
 
 .button_wrapper a {
  position: relative;
- top: 8px;
- color: white;
+ top: 14px;
+ left: 5px;
+ color: #333333;
  text-decoration: none;
- font-size: 20px;
- padding: 8px 67px;
+ font-size: 25px;
+ padding: 14px 80px;
  font-family: 'Poiret One', cursive;
+ font-weight: bold;
 }
 
-.features_background {
+.about_container {
+ width: 100%;
  position: relative;
- top: -422px;
+ top: -410px;
+ z-index: -300;
+ left: 50%;
+ margin: 0 0 0 -952px;
+}
+
+.about_info{
+ position: relative;
+ top: -1080px;
+ width: 400px;
+ left: 50%;
+ margin-left: 280px;
+}
+
+.about_header{
+ font-size: 39px;
+ position: relative;
+ top: -45px;
+}
+
+.about_info_text {
+ color: white;
+ font-family: 'Poiret One', cursive;
+ line-height: 45px;
 }
 
 .shape_container {
  position: relative;
- top: -510px;
+ top: -610px;
   overflow:hidden;
-  height: 1600px;
+  height: 1200px;
   width: 1920px;
   left: 50%;
   margin-left: -952px;
+  background-color: #141212;
   /* See above why we don't need to do this anymore!!!
   I rpob don't even need THIS container
   left: 50%;
   margin-left: -952px;*/
 }
 
-.shape {
+/* .shape {
  height:1400px;
  width:1920px;
-   background: #0d0d0d; /* For browsers that do not support gradients */
-   background: -webkit-linear-gradient(left, #0c0a09, #171514); /* For Safari 5.1 to 6.0 */
-   background: -o-linear-gradient(right, #0c0a09, #171514); /* For Opera 11.1 to 12.0 */
-   background: -moz-linear-gradient(right, #0c0a09, #171514); /* For Firefox 3.6 to 15 */
-   background: linear-gradient(to right, #0c0a09, #171514); /* Standard syntax */
+   background: #0d0d0d; /* For browsers that do not support gradients
+   background: -webkit-linear-gradient(left, #0c0a09, #171514); /* For Safari 5.1 to 6.0
+   background: -o-linear-gradient(right, #0c0a09, #171514); /* For Opera 11.1 to 12.0
+   background: -moz-linear-gradient(right, #0c0a09, #171514); /* For Firefox 3.6 to 15
+   background: linear-gradient(to right, #0c0a09, #171514); /* Standard syntax
  shape-outside: polygon(100% 100%, 100% 0, 100% 100%, 100% 100%);
  clip-path: polygon(0% 0%, 100% 11.5%, 100% 88.5%, 0% 100%);
  z-index: 50;
 }
+*/
 
 #features {
  height: 1160px;
+ position: relative;
+ top: -290px;
+ z-index: 500;
 }
-
 .feature_container {
  position: relative;
  left: 50%;
- margin-left: 452px;
+ margin-left: -148px;
  z-index: 50;
- background: #fe3600;
  width: 580px;
  height: 60px;
- top: -350px;
+ top: -410px;
  border-radius: 6px;
  opacity: .75;
+ z-index: 200;
 }
 
 .feature_container div {
  position: relative;
- left: 10%;
- top: 17px;
- font-size: 22px;
- font-weight: bold;
+ font-size: 50px;
  font-family: 'Poiret One', cursive;
+ color: white;
 }
 
 .info_container {
  position: relative;
- top: 380px;
+ top: 500px;
  margin: 0 20%;
 }
 
@@ -216,15 +265,15 @@ body>header {
 
 .left_features_header_text {
  color: #fe3600;
- font-size: 32px;
+ font-size: 26px;
  font-weight: bolder;
  font-family: 'Audiowide', cursive;
 }
 
 #left_features_points_text {
- font-size: 16px;
+ font-size: 14px;
  font-family: 'Audiowide', cursive;
- color: #dadada;
+ color: #b7b7b7;
  padding-bottom: 102px;
 }
 
@@ -232,13 +281,13 @@ body>header {
  display: inline-block;
  width: 33%;
  position: relative;
- top: -110px;
+ top: -240px;
 }
 
 .phone_vector {
- width: 200px;
+ width: 300px;
  position: relative;
- left: 92px;
+ left: 45px;
  padding-bottom: 20px;
 }
 
@@ -247,20 +296,20 @@ body>header {
  width: 32.5%;
  position: relative;
  top: -180px;
- left: 75px;
+ left: 90px;
 }
 
 .right_features_header_text {
  color: #fe3600;
- font-size: 32px;
+ font-size: 26px;
  font-weight: bolder;
  font-family: 'Audiowide', cursive;
 }
 
 #right_features_points_text {
- font-size: 16px;
+ font-size: 14px;
  font-family: 'Audiowide', cursive;
- color: #dadada;
+ color: #b7b7b7;
  padding-bottom: 102px;
 }
 
@@ -275,34 +324,33 @@ body>header {
  width: 1920px;
  left: 50%;
  margin-left: -960px;
+ top: -450px;
+ z-index: 100;
 }
 
 .costs__header_container {
  position: relative;
  z-index: 50;
- background: #fe3600;
- width: 25%;
- height: 60px;
  border-radius: 6px;
  opacity: .75;
- top: -1370px;
+ top: -1300px;
+ left: 50%;
+ margin-left: -80px;
 }
 
 .cost_text {
  position: relative;
- left: 370px;
  top: 17px;
- font-size: 22px;
- font-weight: bold;
+ font-size: 45px;
  font-family: 'Poiret One', cursive;
 }
 
 .pricing_container {
  position: relative;
- top: -1150px;
  margin: 0 18%;
  text-align: center;
  z-index: 100;
+ top: -1150px;
 }
 
 .pricing_free_box {
@@ -310,24 +358,31 @@ body>header {
  width: 20%;
  height: 380px;
  display: inline-block;
- background: #1e1e1e;
+ background: #161616;
+ border-radius: 30px;
  left: -110px;
- -moz-box-shadow: 1px 2px 50px #1e1e1e;
+ /*-moz-box-shadow: 1px 2px 50px #1e1e1e;
  -webkit-box-shadow: 1px 2px 50px #1e1e1e;
- box-shadow: 1px 2px 50px #1e1e1e;
- opacity: .85;
+ box-shadow: 1px 2px 50px #1e1e1e;*/
+ border-top: 1px solid #aa2500;
+ border-bottom: 1px solid #aa2500;
 }
 
 .pricing_standard_box {
  position: relative;
- top: 23px;
+ top: 15px;
  width: 22%;
- height: 420px;
+ height: 430px;
  display: inline-block;
- background: #fe3600;
- -moz-box-shadow: 1px 2px 50px #111;
- -webkit-box-shadow: 1px 2px 50px #111;
- box-shadow: 1px 2px 50px #444444;
+ background: #0a0a0a;/*#aa2500;*/
+ border-radius: 35px;
+ /*-moz-box-shadow: 1px 2px 50px #fe3600;
+ -webkit-box-shadow: 1px 2px 50px #fe3600;
+ box-shadow: 1px 2px 50px #fe3600;*/
+ border-top: 1px solid #fe3600;
+ border-bottom: 1px solid #fe3600;
+ border-left: 1px solid #fe3600;
+ border-right: 1px solid #fe3600;
 }
 
 .pricing_premium_box {
@@ -335,64 +390,85 @@ body>header {
  width: 20%;
  height: 380px;
  display: inline-block;
- background: #1e1e1e;
+ background: #161616;
+ border-radius: 30px;
  left: 110px;
- -moz-box-shadow: 1px 2px 50px #1e1e1e;
+ /*-moz-box-shadow: 1px 2px 50px #1e1e1e;
  -webkit-box-shadow: 1px 2px 50px #1e1e1e;
- box-shadow: 1px 2px 50px #1e1e1e;
- opacity: .85;
+ box-shadow: 1px 2px 50px #1e1e1e;*/
+ border-top: 1px solid #aa2500;
+ border-bottom: 1px solid #aa2500;
+}
+
+.pricing_free_box:hover {
+ -moz-box-shadow: 1px 2px 50px #aa2500;
+ -webkit-box-shadow: 1px 2px 50px #aa2500;
+ box-shadow: 1px 2px 50px #aa2500;
+}
+.pricing_standard_box:hover {
+ -moz-box-shadow: 1px 2px 50px #aa2500;
+ -webkit-box-shadow: 1px 2px 50px #aa2500;
+ box-shadow: 1px 2px 50px #aa2500;
+}
+.pricing_premium_box:hover {
+ -moz-box-shadow: 1px 2px 50px #aa2500;
+ -webkit-box-shadow: 1px 2px 50px #aa2500;
+ box-shadow: 1px 2px 50px #aa2500;
 }
 
 .price_free_heading {
  padding: 20px;
- background: #161616;
- font-family: Arial, Helvetica, sans-serif;
+ /*background: #161616;*/
+ font-family: 'Anton', sans-serif;
  font-size: 21px;
- font-weight: bold;
+ border-bottom: 3px solid #222222;
+ font-weight: lighter;
 }
 .free_points {
  padding: 10px;
  position: relative;
  top: 20px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Anton', sans-serif;
  font-size: 16px;
- font-weight: bold;
+ font-weight: lighter;
 }
 
 .price_standard_heading {
  padding: 25px;
- background: #b02601;
- font-family: Arial, Helvetica, sans-serif;
+ /*background: #b02601;*/
+ font-family: 'Anton', sans-serif;
  font-size: 23px;
- font-weight: bold;
+ border-bottom: 3px solid #222222;
+ font-weight: lighter;
 }
 .standard_points {
  padding: 12px;
  position: relative;
  top: 20px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Anton', sans-serif;
  font-size: 18px;
- font-weight: bold;
+ font-weight: lighter;
 }
 
 .price_premium_heading {
  padding: 20px;
- background: #161616;
- font-family: Arial, Helvetica, sans-serif;
+ /*background: #161616;*/
+ font-family: 'Anton', sans-serif;
  font-size: 21px;
- font-weight: bold;
+ border-bottom: 3px solid #222222;
+ font-weight: lighter;
 }
 .premium_points {
  padding: 10px;
  position: relative;
  top: 20px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Anton', sans-serif;
  font-size: 16px;
- font-weight: bold;
+ font-weight: lighter;
 }
 
 .free_start_container {
- padding: 30px 18px 35px 18px;
+ padding: 30px 18px 38px 18px;
  position: relative;
  top: 20px;
 }
@@ -402,13 +478,13 @@ body>header {
  top: 20px;
 }
 .premium_start_container {
- padding: 30px 18px 35px 18px;
+ padding: 30px 18px 38px 18px;
  position: relative;
  top: 20px;
 }
 
 .start_button_free {
- padding: 13px 72px;
+ padding: 9px 72px;
  background: black;
  text-decoration: none;
  -moz-box-shadow: 1px 1px 10px #111111;
@@ -416,38 +492,44 @@ body>header {
  box-shadow: 1px 1px 10px #111111;
  border-radius: 3px;
  position: relative;
- top: 20px;
- font-family: Arial, Helvetica, sans-serif;
+ top: 1px;
+ font-family: 'Anton', sans-serif;
  color: white;
  font-size: 18px;
+ font-weight: lighter;
 }
 .start_button_standard {
  position: relative;
- top: 10px;
- padding: 13px 72px;
- background: white;
- color: black;
+ top: 1px;
+ padding: 9px 72px;
+ background: #fe3600;
+ opacity: .7;
+ color: #333333;
  text-decoration: none;
  -moz-box-shadow: 1px 2px 30px #1e1e1e;
  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
  box-shadow: 1px 2px 30px #1e1e1e;
  border-radius: 3px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Anton', sans-serif;
  font-size: 20px;
+ border-radius: 5px;
+ font-weight: lighter;
 }
 .start_button_premium {
  position: relative;
- top: 20px;
- padding: 13px 72px;
+ top: 1px;
+ padding: 9px 72px;
  background: black;
  text-decoration: none;
  -moz-box-shadow: 1px 1px 10px #111111;
  -webkit-box-shadow: 1px 1px 10px #111111;
  box-shadow: 1px 1px 10px #111111;
  border-radius: 3px;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Anton', sans-serif;
  color: white;
  font-size: 18px;
+ border-radius: 5px;
+ font-weight: lighter;
 }
 
 .pricing_background {
@@ -467,6 +549,11 @@ body>header {
  font-size: 30px;
 }
 
+.app {
+ position: relative;
+ top: -465px;
+}
+
 .app_container {
  position: relative;
  width: 1920px;
@@ -474,7 +561,7 @@ body>header {
  background: #fe3600;
  top: -868px;
  left: 50%;
- margin-left: -954px;
+ margin-left: -952px;
 }
 
 .android_logo {
@@ -487,6 +574,7 @@ body>header {
  box-shadow: 1px 2px 30px #1e1e1e;
  border-radius: 6px;
 }
+
 .apple_logo {
  position: relative;
  top: 190px;
@@ -506,10 +594,10 @@ body>header {
  position: relative;
  background: #171514;
  width: 1920px;
- height: 450px;
+ height: 465px;
  left: 50%;
- top: -868px;
- margin-left: -954px;
+ top: -1335px;
+ margin-left: -952px;
 }
 
 .media_wrapper {
@@ -525,11 +613,13 @@ body>header {
  padding: 5px 5px;
  border-radius: 50%;
 }
+
 .ig_media_circle {
  width: 75px;
  padding: 5px 5px;
  border-radius: 50%;
 }
+
 .twitter_media_circle {
  position: relative;
  width: 75px;
@@ -541,24 +631,35 @@ body>header {
 .trial_button {
  position: relative;
  top: 160px;
- left: 42.5%;
- background: #fe3600;
- border-radius: 5px;
- width: 275px;
- height: 40px;
+ left: 50%;
+ margin-left: -170px;
+ text-decoration: none;
+ background: #00ff94;
+ border-radius: 7px;
+ width: 340px;
+ height: 60px;
  -moz-box-shadow: 1px 2px 30px #1e1e1e;
  -webkit-box-shadow: 1px 2px 30px #1e1e1e;
  box-shadow: 1px 2px 30px black;
- border-radius: 3px;
+ border-radius: 30px;
+}
+
+.trial_button:hover{
+ -moz-box-shadow: 1px 2px 30px #e3e3e3;
+ -webkit-box-shadow: 1px 2px 30px #e3e3e3;
+ box-shadow: 1px 2px 30px #e3e3e3;
 }
 
 .trial_button a {
  position: relative;
- top: 8px;
- color: white;
+ top: 16px;
+ left: 5px;
+ color: #333333;
  text-decoration: none;
- font-size: 20px;
- padding: 8px 67px;
+ font-size: 25px;
+ padding: 14px 80px;
+ font-family: 'Poiret One', cursive;
+ font-weight: bold;
 }
 
 .footer_nav {
@@ -581,22 +682,35 @@ body>header {
  color: white;
  font-family: 'Poiret One', cursive;
 }
-
+.footer_nav ul li a:hover{
+ border-bottom: 1px solid white;
+}
 .all_rights {
  position: relative;
  left: 47%;
- top: 205px;
+ top: 215px;
  font-family: 'Poiret One', cursive;
+}
+
+@media (max-width: 1450px){
+
+ .about_info {
+   margin-left: 150px;
+ }
+
 }
 
 /*Make it fit to this size and then add a background and just keep everything centered so you don't have to keep scaling*/
 @media (max-width: 1250px){
  html {
    background: black;
+   height: 5800px;
  }
  body {
    padding: 0;
    margin: 0;
+   position: relative;
+   top: -40px;
  }
  #center_everything {
    position: relative;
@@ -604,12 +718,20 @@ body>header {
    left: -100px;
    margin-left: 100px;
    padding: 0;
-   height: 5300px;
+   height: 5946px;
    overflow-y: hidden;
    overflow-x: hidden;
  }
  #logo {
    display: none;
+ }
+ .nav_background {
+   position: relative;
+   top: 30px;
+ }
+ #header_nav {
+   position:relative;
+   top: -40px;
  }
  #header_nav ul {
    left: 49%;
@@ -628,25 +750,38 @@ body>header {
  .slogan_container {
    position: relative;
    width: 1350px;
-   top: -340px;
+   top: -440px;
    height: 70px;
    left: 50%;
-   margin-left: -722px;
+   margin-left: -555px;
  }
  .slogan {
-   top: 24px;
+   top: -24px;
+   font-size: 35px;
  }
  .button_wrapper {
-   top: -320px;
+   top: -420px;
    left: 50%;
-   margin-left: -130px;
+   margin-left: -170px;
+ }
+ .subslogan{
+   top: -20px;
+   font-size: 25px;
+   left: 584px;
+ }
+ .about_info{
+   left: 50%;
+   margin-left: -196px;
+ }
+ .about_header{
+
  }
  .feature_container {
    position: relative;
-   margin-left: -600px;
+   margin-left: -717px;
    padding: 0px;
    left: 50%;
-   top: -270px;
+   top: -460px;
    z-index: 500;
    width: 1250px;
    border-radius: 0;
@@ -657,20 +792,20 @@ body>header {
    left: 46%;
  }
  .shape_container {
-   height: 2650px;
+   height: 2000px;
    width: 1920px;
  }
  .shape {
    position: relative;
    width: 3410px;
-   height: 2650px;
-   top: 110px;
+   height: 2150px;
+   top: -30px;
  }
  .info_container {
    width: 414px;
    text-align: center;
    left: 50%;
-   margin-left: -952px;
+   margin-left: -956px;
  }
  .left_features {
    width: 100%;
@@ -678,10 +813,11 @@ body>header {
  }
  .left_features_header_text {
    font-size: 26px;
+   padding-bottom: 10px;
  }
  #left_features_points_text {
    font-size: 14px;
-   padding-bottom: 70px;
+   padding-bottom: 45px;
  }
  .right_features {
    width: 100%;
@@ -690,10 +826,11 @@ body>header {
  }
  .right_features_header_text{
    font-size: 26px;
+   padding-bottom: 10px;
  }
  #right_features_points_text {
    font-size: 14px;
-   padding-bottom: 70px;
+   padding-bottom: 45px;
  }
  .phone_container {
    left: 15px;
@@ -703,63 +840,91 @@ body>header {
  }
  .phone_vector {
    display: block;
+   width: 230px;
+   left: 71px;
  }
  .pricing_background {
    position: relative;
-   top: 700px;
+   top: 744px;
    width: 1920px;
    left: 50%;
-   margin-left: -952px;
+   margin-left: -842px;
  }
  .costs__header_container {
-   top: -80px;
+   top: -550px;
    width: 1250px;
    left: 50%;
-   margin-left: -632px;
+   margin-left: -695px;
  }
  .costs__header_container div {
    left: 49%;
  }
  .pricing_container {
-   top: 0;
+   top: -500px;
    padding: 0;
    left: 50%;
-   margin-left: -215px;
-   background: black;
+   margin-left: -205px;
+   width: 110px;
  }
  .pricing_free_box {
-   left: 0;
+   left: 48px;
    margin: 0;
-   top: 0;
+   top: 60px;
    padding: 0;
-   width: 414px;
+   width: 314px;
+   height: 314px;
    display: block;
+   line-height: 20px;
+ }
+ .start_button_free{
+   top: 0px;
+ }
+ .free_points{
+   padding: 4px;
  }
  .pricing_standard_box {
-   left: 0;
+   left: 48px;
    margin: 0;
-   top: 0;
+   top: 90px;
    padding: 0;
-   width: 414px;
+   width: 314px;
+   height: 314px;
    display: block;
+   line-height: 20px;
+ }
+ .start_button_standard{
+   top: -8px;
+   padding: 8px 75px;
+   font-size: 18px;
+ }
+ .standard_points{
+   padding: 4px;
  }
  .pricing_premium_box {
-   left: 0;
+   left: 48px;
    margin: 0;
-   top: 0;
+   top: 120px;
    padding: 0;
-   width: 414px;
+   width: 314px;
+   height: 314px;
    display: block;
+   line-height: 20px;
+ }
+ .start_button_premium{
+   top: 0px;
+ }
+ .premium_points{
+   padding: 4px;
  }
  .app {
    position: relative;
-   top: 868px;
+   top: 152px;
    width: 414px;
    left: 50%;
  }
  .download {
    top: 100px;
-   left: 580px;
+   left: 570px;
    margin: 0;
    font-size: 24px;
    display: block;
@@ -780,6 +945,7 @@ body>header {
    position: relative;
    left: 50%;
    margin-left: 360px;
+   top: -716px;
  }
  .media_wrapper {
    left: 26.5%;
@@ -794,19 +960,19 @@ body>header {
  .fb_media_circle {
    width: 60px;
    padding: 0;
-   left: -70px;
+   left: -75px;
    display: inline-block;
  }
  .twitter_media_circle {
    width: 60px;
    padding: 0;
-   left: 70px;
+   left: 68px;
    top: -5px;
    display: inline-block;
  }
  .trial_button {
-   top: 110px;
-   left: 465px;
+   top: 140px;
+   left: 595px;
  }
  .footer_nav {
    left: 380px;
@@ -817,8 +983,131 @@ body>header {
    left: 0;
  }
  .all_rights {
-   left: 150px;
-   top: 250px;
+   left: 530px;
+   top: 243px;
+ }
+}
+
+@media (max-width: 570px){
+ html {
+   height: 5890px;
+ }
+ .center_everything{
+   height: 5890px;
+ }
+ .slogan{
+   font-size: 21px;
+   left: 789px;
+ }
+ .subslogan{
+   font-size: 18px;
+   left: 640px;
+ }
+ .button_wrapper{
+   width: 220px;
+   height: 45px;
+   left: 242px;
+ }
+ .button_wrapper a {
+   font-size: 20px;
+   width: 380px;
+   padding: 0;
+   left: 50px;
+   top: 10px;
+ }
+ .about_info{
+   left: 50%;
+   margin-left: -126px;
+   width: 260px;
+ }
+ .about_header{
+   font-size: 18pt;
+ }
+ .feature_container{
+   color: white;
+ }
+ .feature_container div{
+   font-size: 28px;
+   color: white;
+   left: 630px;
+ }
+ .left_features{
+   left: -7px;
+ }
+ .left_features_header_text {
+   font-size: 22px;
+ }
+ #left_features_points_text {
+   font-size: 13px;
+   padding-bottom: 50px;
+   position: relative;
+   left: 0px;
+ }
+ .right_features {
+   width: 100%;
+   left: -7px;
+   padding-top: 50px;
+ }
+ .right_features_header_text{
+   font-size: 22px;
+ }
+ #right_features_points_text {
+   font-size: 13px;
+   padding-bottom: 50px;
+   position: relative;
+ }
+ .costs__header_container{
+   left: 990px;
+ }
+ .cost_text {
+   font-size: 28px;
+ }
+ .pricing_free_box{
+   width: 270px;
+   left: 70px;
+ }
+ .pricing_standard_box{
+   width: 270px;
+   left: 70px;
+ }
+ .pricing_premium_box{
+   width: 270px;
+   left: 70px;
+ }
+ .download{
+   font-size: 22px;
+   left: 584px;
+ }
+ .apple_logo{
+   left: 645px;
+ }
+ .android_logo{
+   left: 645px;
+ }
+ .trial_button{
+   width: 220px;
+   height: 45px;
+   left: 650px;
+ }
+ .trial_button a {
+   font-size: 20px;
+   width: 380px;
+   padding: 0;
+   left: 40px;
+   top: 12px;
+ }
+ .media_wrapper{
+   left: 50%;
+   margin-left: -466px;
+ }
+ .fb_media_circle{
+   left: -45px;
+ }
+ .twitter_media_circle {
+   left: 45px;
+ }
+ footer{
+   top: -750px;
  }
 }
 
